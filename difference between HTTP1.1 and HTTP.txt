@@ -1,0 +1,25 @@
+difference between HTTP1.1 and HTTP2
+
+HTTP1.1
+
+> It introduced a Keep alive mechanism.
+> It works on Textual format
+> A connection could be reuse for more than single request.
+> Pipeline was added. This allows the client to send multiple request before waiting for each respose.
+> The Persistent connections reduce request latency because client does not need to initiate expensive TCP three-way handshake for every request.
+> Additional cache control mechanism were introduced.
+> The response must be received in the same order as to requests order.
+> Including language, encoding and type also introduced.
+
+HTTP2
+
+> We have a HTTP streams.
+> It works on the binary protocol.
+> It's a binary protocol rather than a text protocol.It can't be read and created manually.
+> It's a Multiplexed protocol.
+> Multiple request could be sent to the same server on a single TCP connection.
+> It compresses headers. As these are often similar among a set of request, this removes the duplication and overhead of data transmitted.
+> Also that HTTP/2 introduced a push capability to allow servers to send updated to the clients whenever new data is available.
+> This we can call it as a server-push function.
+
+

@@ -1,0 +1,91 @@
+> Objects is the most important data-type and forms building blocks of the modern Javascript.
+
+> These objects are quite differ from Javascript primitive datatypes(Number, String, Boolean, null, undefined and symbol).
+
+> Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+
+> Object is an reference data type.
+> Object in Javascript may be defined as an unordered collection of related data, primitive types, in the form of "Key:value" pair.
+
+Objects and properties:
+> Javascript object has properties associated with it.
+> object properties are basically the same as ordinary Javascript variable.
+eg: 
+
+ObjectName.propertyName
+
+> Both the object name and property name are case sensitive.
+
+var bike = new Object();
+bike.color = "black";
+bike.model = "pulser";
+
+> Properties of Javascript objects can also be accessed or set using a bracket notation.
+
+bike['model'] = 'pulser';
+bike['color'] = 'black';
+
+> object property name can be any valid Javascript String or anything converted into a string.
+> Any property name that is not a valid Javascript identifier that can also accessed by bracket notation.
+
+
+## Creating Objects in Javascript:
+> Create Javascript Object with Object Literal
+  we can create a javascript object is object literal, simply define the property and values inside curly braces.
+  
+  let car = {name: 'honda', color: 'white'}
+
+## Create Javascript Object with constructor:
+> Constructor is nothing but function and with help of new keyword, constructor function allows to create multiple objects.
+
+ex:
+function Vehicle(name, color){
+    this.name = name;
+    this.color = color;
+}
+let bike1 = new Vehicle('pulsar', 'black');
+let bike2 = new Vehicle('KTM','black');
+console.log(bike1.name);
+console.log(bike2.name);
+
+
+
+## Create objects using new keyword.
+
+var person = new Object();
+person.firstname = "kalai";
+person.age = 24;
+
+##Create object.create method
+
+> Object can also be created using the object.create().
+> It is for prototype object and without constructor method.
+
+var Animal = {
+  type: 'Invertebrates', 
+  displayType: function() {  
+    console.log(this.type);
+  }
+};
+
+var animal1 = Object.create(Animal);
+animal1.displayType();
+var cat = Object.create(Animal);
+cat.color = 'white';
+cat.displayType(); 
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+ 
