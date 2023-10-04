@@ -1,4 +1,3 @@
-
 > Objects is the most important data-type and forms building blocks of the modern Javascript.
 
 > These objects are quite differ from Javascript primitive datatypes(Number, String, Boolean, null, undefined and symbol).
